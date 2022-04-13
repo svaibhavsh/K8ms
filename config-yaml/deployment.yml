@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8-app
+  template:
+    metadata:
+      labels:
+        app: k8-app
+    spec:
+      containers:
+        - name: k8ui
+          image: testdocker2022/k8ui-image:v1.2
+          ports:
+            - containerPort: 80
+        - name: k8db
+          image: testdocker2022/db-image:latest
+          ports:
+            - containerPort: 8081
+        - name: k8wa
+          image: testdocker2022/wa-image:latest
+          ports:
+            - containerPort: 8082
