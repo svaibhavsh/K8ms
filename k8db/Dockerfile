@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM registry.access.redhat.com/ubi8/nodejs-16
 WORKDIR /app
 COPY ./package.json .
 RUN npm install
