@@ -54,7 +54,8 @@ class Home extends React.Component {
         // var watsonurl = 'https://k8api-appreciative-reedbuck-bi.mybluemix.net/watson';
         // var watsonurl= "http://localhost:8082/watson";
         // var watsonurl= "http://169.51.203.79:30082/watson";
-        var watsonurl = "http://"+ NODE_IP + ":" + WA_NODE_PORT + "/watson";
+        // var watsonurl = "http://"+ NODE_IP + ":" + WA_NODE_PORT + "/watson";
+        var watsonurl = "https://k8-watson-svaibhavs-dev.apps.sandbox.x8i5.p1.openshiftapps.com/watson";
         console.log ("UI WA URL", watsonurl);
         axios.get(watsonurl).then((response) => {
             this.setState({
