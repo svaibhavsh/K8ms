@@ -4,17 +4,22 @@ const app = express()
 const cors = require('cors')
 const port = 8081
 
-// const port = 8080
 
 var MongoClient = require('mongodb').MongoClient
 
 //mongodb connection string to hyperprotect db in IBM cloud
-var url = 'mongodb://admin:Techzoneusecase1$@dbaas229.hyperp-dbaas.cloud.ibm.com:30518/admin?&ssl=true&tlsCAFile=./cert.pem'
+// var url = 'mongodb://admin:Techzoneusecase1$@dbaas229.hyperp-dbaas.cloud.ibm.com:30518/admin?&ssl=true&tlsCAFile=./cert.pem'
+
+var url = 'mongodb://admin:Techzoneusecase1$@dbaas229.hyperp-dbaas.cloud.ibm.com:30570/admin?&ssl=true&tlsCAFile=./cert.pem'
+
+// dbaas229.hyperp-dbaas.cloud.ibm.com:30570,dbaas230.hyperp-dbaas.cloud.ibm.com:30441,dbaas231.hyperp-dbaas.cloud.ibm.com:30679
 
 app.use(cors());
 // dbaas229.hyperp-dbaas.cloud.ibm.com:30518,dbaas230.hyperp-dbaas.cloud.ibm.com:30966,dbaas231.hyperp-dbaas.cloud.ibm.com:30043
 //**If your db needs certificate, please add the file root directory****/
 //cert.pem file is used for connection to hyperprotect mogodb
+
+
 
 
 app.get('/', (req, res)=> {
