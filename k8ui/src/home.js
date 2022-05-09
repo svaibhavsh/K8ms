@@ -37,9 +37,10 @@ class Home extends React.Component {
     callDBService() {
         // var dburl = 'https://k8api-appreciative-reedbuck-bi.mybluemix.net/k8api';
         
-        var dburl = "http://"+ NODE_IP + ":" + DB_NODE_PORT + "/k8api";
+        // var dburl = "http://"+ NODE_IP + ":" + DB_NODE_PORT + "/k8api";
         // var dburl= "http://169.51.203.79:30081/k8api";
         // var dburl= "http://localhost:8081/k8api";
+        var dburl = "http://k8-ms-db-k8-project.apps.p1279.cecc.ihost.com/k8api";
         console.log ("UI DB URL", dburl);
         axios.get(dburl).then((response) => {
 
@@ -55,7 +56,7 @@ class Home extends React.Component {
         // var watsonurl= "http://localhost:8082/watson";
         // var watsonurl= "http://169.51.203.79:30082/watson";
         // var watsonurl = "http://"+ NODE_IP + ":" + WA_NODE_PORT + "/watson";
-        var watsonurl = "https://k8-watson-svaibhavs-dev.apps.sandbox.x8i5.p1.openshiftapps.com/watson";
+        var watsonurl = "http://k8-ms-wa-k8-project.apps.p1279.cecc.ihost.com/watson";
         console.log ("UI WA URL", watsonurl);
         axios.get(watsonurl).then((response) => {
             this.setState({
