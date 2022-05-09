@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const cors = require('cors')
 
-const port = 8080;
+const port = 8082;
 
 const AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
