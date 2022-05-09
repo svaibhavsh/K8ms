@@ -4,6 +4,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./package.json .
 RUN npm install
-EXPOSE 8080
+EXPOSE 8082
 COPY . .
 CMD ["node", "server.js"]
