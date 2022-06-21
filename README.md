@@ -1,5 +1,5 @@
 # K8ms
-Abstract
+Abstract:
 The git folder contains the source code for the hands-on tutorial providing a step-by-step procedure to design & develop a typical 3-tier microservices based application that finds use in a hybrid cloud environment, where the core data center application leverages IBM Cloud services and runs on an OCP cluster. 
 
 The tutorial could also be leveraged as a starting point to modernize data center applications in a multi-cloud environment.
