@@ -1,0 +1,15 @@
+k8api/node_modules
+
+k8ui/node_modules
+k8ui/.gitignore
+k8ui/package-lock.json
+
+k8watson/node_modules
+k8watson/.gitignore
+k8watson/package-lock.json
+
+k8db/node_modules
+k8db/.gitignore 
+k8db/package-lock.json
+
+
