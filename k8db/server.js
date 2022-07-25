@@ -10,7 +10,7 @@ var MongoClient = require('mongodb').MongoClient
 //mongodb connection string to hyperprotect db in IBM cloud
 // var url = 'mongodb://admin:Techzoneusecase1$@dbaas229.hyperp-dbaas.cloud.ibm.com:30518/admin?&ssl=true&tlsCAFile=./cert.pem'
 
-var url = 'mongodb://admin:Techzoneusecase1$@dbaas229.hyperp-dbaas.cloud.ibm.com:30032/admin?&ssl=true&tlsCAFile=./cert.pem'
+var url = 'mongodb://admin:Techzoneusecase1$@dbaas231.hyperp-dbaas.cloud.ibm.com:30160/admin?&ssl=true&tlsCAFile=./cert.pem'
 
 // dbaas229.hyperp-dbaas.cloud.ibm.com:30570,dbaas230.hyperp-dbaas.cloud.ibm.com:30441,dbaas231.hyperp-dbaas.cloud.ibm.com:30679
 
